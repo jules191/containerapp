@@ -1,0 +1,96 @@
+body{
+    background-color: #FFF6DA;
+}
+
+.mainContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#heading{
+    color: #A94A4A;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    color: #889E73;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F4D793;
+}
+
+#containers{
+    color: #889E73;
+    width: 200px;
+}
+
+.description{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#descriptionTitle{
+    color: #A94A4A;
+}
+
+.characteristics{
+    color: #889E73;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F4D793;
+    
+}
+
+.pictureContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F4D793;
+}
+
+#potImage{
+    margin: 20px;
+    border: #A94A4A;
+    border-style: solid;
+    width: 250px;
+    
+}
+
+.calculation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.input{
+    margin: 5px;
+}
+
+#portionSize{
+    color: #A94A4A;
+}
