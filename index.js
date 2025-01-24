@@ -10,11 +10,11 @@ function Container(key, description, weight, lid, picture) {
     this.lid = lid;
     this.picture = picture;
 }
-let panHoffHigh = new Container('panHoffHigh' ,'Pfanne Hoffmann hoch',,true,'./images/' + panHoffHigh + '.jpg');
-let panHoffLow = new Container('panHoffLow' ,'Pfanne Hoffmann niedrig',,true,'./images/' + panHoffLow + '.jpg');
+let panHoffHigh = new Container('panHoffHigh' ,'Pfanne Hoffmann hoch',2119,true,'./images/' + panHoffHigh + '.jpg');
+let panHoffLow = new Container('panHoffLow' ,'Pfanne Hoffmann niedrig',1957,true,'./images/' + panHoffLow + '.jpg');
 let panTefalWok = new Container('panTefalWok' ,'Pfanne Tefal Wok ',987,true,'./images/' + panTefalWok + '.jpg');
 let panOlav = new Container('panOlav' ,'Pfanne Olav ',2347,true,'./images/' + panOlav + '.jpg');
-let roaster = new Container('roaster' ,'Pfanne Bräter ',,true,'./images/' + roaster + '.jpg');
+let roaster = new Container('roaster' ,'Pfanne Bräter ',5200,true,'./images/' + roaster + '.jpg');
 let potBig = new Container('potBig' ,'Topf Groß ',1377,true,'./images/' + potBig + '.jpg');
 let potMidLow = new Container('potMidLow' ,'Topf Mittel niedrig',940,true,'./images/' + potMidLow + '.jpg');
 let potMidHigh = new Container('potMidHigh' ,'Topf Mittel hoch',993,true,'./images/' + potMidHigh + '.jpg');
