@@ -100,10 +100,8 @@ function updatePortionSize() {
     let containerWeight = selectedContainer ? selectedContainer.weight : 0;
     let portionSize = (inputValueWeight - containerWeight) / inputValuePortions
 
-    if (isNaN(inputValueWeight) || isNaN(inputValuePortions) || inputValuePortions <= 0) {
-        portionSizeLabel.innerHTML = "Bitte Gesamtgewicht und Portionsgröße angeben.";
-    } else {
-        portionSizeLabel.innerHTML = "Portionsgröße: " + portionSize
-    };
+    portionSizeLabel.innerHTML = "Portionsgröße: " + portionSize
+
+    
 };
 
