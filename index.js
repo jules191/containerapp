@@ -81,7 +81,8 @@ let dropdown = document.querySelector("#containers");
 dropdown.addEventListener("change", function () {
     let selectedKey = dropdown.value;
     let selectedContainer = containerCollection[selectedKey];
-    
+
+    document.querySelector("#descriptionTitle").innerHTML = selectedContainer.description;
     document.querySelector("#weight").innerHTML = "Gewicht: " + selectedContainer.weight + " g";
 
     if (selectedContainer.lid) {
