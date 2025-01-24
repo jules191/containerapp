@@ -93,19 +93,21 @@ dropdown.addEventListener("change", function () {
 });
 
 function updatePortionSize() {
-    let inputValueWeight = parseFloat(totalWeight.value, 10);
-    let inputValuePortions = parseFloat(amountPortions.value, 10);
+    let inputValueWeight = parseFloat(totalWeight.value.trim(), 10);
+    let inputValuePortions = parseFloat(amountPortions.value.trim(), 10);
     let selectedKey = dropdown.value;
     let selectedContainer = containerCollection[selectedKey];
     let containerWeight = selectedContainer ? selectedContainer.weight : 0;
     let portionSize = (inputValueWeight - containerWeight) / inputValuePortions
 
+    
+
     if (isNaN(inputValueWeight) || isNaN(inputValuePortions) || inputValuePortions <= 0) {
-        portionSizeLabel.innerHTML = "Bitte Gesamtgewicht und Portionsgröße angeben.";
+      portionSizeLabel.innerHTML = "Bitte Gesamtgewicht und Portionsgröße angeben.";
     } else {
-        portionSizeLabel.innerHTML = "Portionsgröße: " + portionSize
+      portionSizeLabel.innerHTML = "Portionsgröße: " + portionSize + "g"
     };
 };
 
-totalWeight.addEventListener("change", updatePortionSize())
-amountPortions.addEventListener("change", updatePortionSize())
+totalWeight.addEventListener("change", updatePortionSize);
+amountPortions.addEventListener("change", updatePortionSize);
