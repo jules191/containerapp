@@ -103,3 +103,4 @@ function updatePortionSize() {
         portionSizeLabel.innerHTML = "Bitte Gesamtgewicht und Portionsgröße angeben.";
     } else {
         portionSizeLabel.innerHTML = "Portionsgröße: "
+    }
